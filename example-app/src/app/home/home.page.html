@@ -1,12 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Feedbacktool Lib
-    </ion-title>
+    <ion-title> Feedbacktool Lib </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <dev-feedback-tool-lib></dev-feedback-tool-lib>
-  <dev-home-page title="Home Page Title" content="HomePage Content"></dev-home-page>
+  <dev-home-page
+    title="Awesome Cat Fact"
+    [content]="catFact$ | async "
+  ></dev-home-page>
 </ion-content>

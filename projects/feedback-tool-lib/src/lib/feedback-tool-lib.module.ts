@@ -1,38 +1,15 @@
-import { InjectionToken, ModuleWithProviders, NgModule } from '@angular/core';
-import { FeedbackToolLibComponent } from './feedback-tool-lib.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { FeedbackToolLibComponent } from './feedback-tool-lib.component';
 import { FeedbackToolLibService } from './feedback-tool-lib.service';
-export interface LibConfig {
-  apiUrl: string;
-}
- 
-export const LibConfigService = new InjectionToken<LibConfig>('LibConfig');
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
-  declarations: [
-    FeedbackToolLibComponent,
-    HomePageComponent
-  ],
-  imports: [
-    IonicModule
-  ],
-  exports: [
-    FeedbackToolLibComponent,
-    HomePageComponent
-  ]
+  declarations: [FeedbackToolLibComponent, HomePageComponent],
+  imports: [CommonModule, HttpClientModule, IonicModule],
+  exports: [FeedbackToolLibComponent, HomePageComponent],
+  providers: [FeedbackToolLibService],
 })
-export class FeedbackToolLibModule { 
-  static forRoot(config: LibConfig): ModuleWithProviders<any> {
-    return {
-      ngModule: FeedbackToolLibModule,
-      providers: [
-        FeedbackToolLibService,
-        {
-          provide: LibConfigService,
-          useValue: config
-        }
-      ]
-    };
-  }
-}
+export class FeedbackToolLibModule {}
