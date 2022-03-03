@@ -16,4 +16,8 @@ export class HomePage implements OnInit {
   ngOnInit(): void {
     this.catFact$ = this.feedbacktoollibService.getCatFact();
   }
+
+  async openDialog() {
+    await this.feedbacktoollibService.showDialog();
+  }
 }

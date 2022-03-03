@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-
 @Component({
   selector: 'dev-home-page',
   templateUrl: './home-page.component.html',

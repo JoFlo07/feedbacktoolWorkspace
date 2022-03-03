@@ -7,6 +7,7 @@
 <ion-content [fullscreen]="true">
   <dev-home-page
     title="Awesome Cat Fact"
-    [content]="catFact$ | async "
+    [content]="(catFact$ | async).fact "
   ></dev-home-page>
+  <ion-button (click)="openDialog()">Open Dialog</ion-button>
 </ion-content>
