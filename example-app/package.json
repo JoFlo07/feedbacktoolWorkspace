@@ -9,7 +9,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "sync": "npx cap sync",
+    "link-library": "npm link",
+    "run-android": "npm run build && npm run sync && npx cap open android",
+    "run-ios": "npm run build && npm run sync && npx cap open ios"
   },
   "private": true,
   "dependencies": {
