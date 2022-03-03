@@ -5,13 +5,13 @@
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0",
     "@ionic/angular": "^6.0.10",
-    "rxjs": "^7.5.4"
+    "rxjs": "^6.6.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@ionic/angular": "^6.0.10",
-    "rxjs": "^7.5.4"
+    "rxjs": "^6.6.0"
   }
 }

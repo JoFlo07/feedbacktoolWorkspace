@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+  //TODO: CHECK WHY TYPE IS NOT CORRECT
   catFact$: any;
 
   constructor(private feedbacktoollibService: FeedbackToolLibService) {}
