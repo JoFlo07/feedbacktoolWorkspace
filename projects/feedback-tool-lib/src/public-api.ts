@@ -5,3 +5,4 @@
 export * from './lib/feedback-tool-lib.service';
 export * from './lib/feedback-tool-lib.component';
 export * from './lib/feedback-tool-lib.module';
+export * from './lib/home-page/home-page.component';
