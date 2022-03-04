@@ -37,3 +37,29 @@ npm link feedback-tool-lib
 ```
 
 5. IMPORT LIB MODULE INTO APP
+
+# DEVELOPMENT FLOW
+
+1. INSTALL CAPACITOR
+```
+npm install @capacitor/core
+npm install @capacitor/cli --save-dev
+npx cap init
+```
+
+2. ADD PLATFORMS
+```
+npm install @capacitor/android
+npx cap add android
+
+npm install @capacitor/ios
+npx cap add ios
+```
+
+# KNOWN ISSUES
+- Cannot add @ionic/angular as dependency to library package:
+    ```
+    npm install --legacy-peer-deps
+    ```
+- Cannot find module [Native Modules Capacitor]:
+We always have to add the native modules we want to use to our example app as well. It is not enough to add them as dependency to the lib only.
