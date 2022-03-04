@@ -19,6 +19,7 @@ npm install
 ```
 
 3. INITIAL BUILD + NPM LINK
+[NPM LINK EXPLAINED](https://dev.to/angular/pro-tip-npm-link-explained-57be)
 
 ```
 # In root directory
