@@ -19,7 +19,6 @@ npm install
 ```
 
 3. INITIAL BUILD + NPM LINK
-[NPM LINK EXPLAINED](https://dev.to/angular/pro-tip-npm-link-explained-57be)
 
 ```
 # In root directory
@@ -27,6 +26,8 @@ ng build
 cd dist/feedback-tool-lib
 npm link
 ```
+[NPM LINK EXPLAINED](https://dev.to/angular/pro-tip-npm-link-explained-57be)
+
 
 4. ADD EXAMPLE APP + LINK LIB TO EXAMPLE APP
 
