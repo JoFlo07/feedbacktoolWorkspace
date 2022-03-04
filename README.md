@@ -66,6 +66,6 @@ npx cap add ios
 We always have to add the native modules we want to use to our example app as well. It is not enough to add them as dependency to the lib only.
 
 # RESOURCES
-[NPM LINK](https://dev.to/angular/pro-tip-npm-link-explained-57be)
-[ANGULAR LIBRARY](https://angular.io/guide/creating-libraries)
-[CAPACITOR](https://capacitorjs.com/docs/getting-started)
+- [NPM LINK](https://dev.to/angular/pro-tip-npm-link-explained-57be)
+- [ANGULAR LIBRARY](https://angular.io/guide/creating-libraries)
+- [CAPACITOR](https://capacitorjs.com/docs/getting-started)
